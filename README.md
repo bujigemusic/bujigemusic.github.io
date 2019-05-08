@@ -1,2 +1,2 @@
-# bujigemusic.github.io
-不羁绊阁音乐社的博客
+# 不羁阁音乐社
+简介
