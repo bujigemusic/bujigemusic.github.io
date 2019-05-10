@@ -1,1 +1,0 @@
-webpackJsonp([5],{826:function(e,t,r){var n=r(85)(null,r(870),null,null,null);e.exports=n.exports},870:function(e,t){e.exports={render:function(){var e=this,t=e.$createElement;return(e._self._c||t)("iframe",{attrs:{width:"920",src:"https://bujigemusic.github.io/global_fm_aplayer/",frameborder:"0",tabindex:"-1"}})},staticRenderFns:[]}}});
