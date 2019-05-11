@@ -1,1 +1,0 @@
-webpackJsonp([6],{826:function(e,r,t){var n=t(85)(null,t(868),null,null,null);e.exports=n.exports},868:function(e,r){e.exports={render:function(){var e=this,r=e.$createElement;return(e._self._c||r)("iframe",{attrs:{src:"/static/gallery.html",frameborder:"0",tabindex:"-1"}})},staticRenderFns:[]}}});
