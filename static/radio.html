@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio</title>
+    <link href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+</head>
+<body>
+<div class="aplayer"></div>
+</body>
+<script>
+  var ap = new APlayer({
+    element: document.getElementById('aplayer'),
+    narrow: false,
+    autoplay: true,
+    showlrc: false,
+    listFolded:false,
+    // fixed:true,
+    listMaxHeight: 10,
+    audio: [
+      {name: 'BBC World Service UK',url: 'http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-12.png'},
+      {name: 'BBC World Service News',url: 'http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-einws',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-83.png'},
+      {name: 'BBC Radio 1',url: 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-138.png'},
+      {name: 'BBC Radio 1xtra',url: 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1xtra_mf_p',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-635.png'},
+      {name: 'BBC Radio 2',url: 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2019/01/c300-405.png'},
+      {name: 'BBC Radio 3',url: 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-1461.png'},
+      {name: 'BBC Radio 4 FM',url: 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4fm_mf_p',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-53.png'},
+      {name: 'BBC Radio 4 LW',url: 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4lw_mf_p',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-624.png'},
+      {name: 'BBC Radio 4 Extra',url: 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4extra_mf_p',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-216.png'},
+      {name: 'BBC Radio 5 Live',url: 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5live_mf_p',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-183.png'},
+      {name: 'BBC Radio 6 Music',url: 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_6music_mf_p',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-160.png'},
+      {name: 'BBC Asian Network',url: 'http://bbcmedia.ic.llnwd.net/stream/bbcmedia_asianet_mf_p',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2019/01/c300-971.png'},
+      {name: 'VOA',url: 'http://voa-28.akacast.akamaistream.net/7/54/322040/v1/ibb.akacast.akamaistream.net/voa-28',cover: ''},
+      {name: 'Capital FM Music',url: 'http://media-sov.musicradio.com/CapitalUK',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-63.png'},
+      {name: 'FOX News',url: 'http://fnradio-shoutcast-32.ng.akacast.akamaistream.net/7/115/13873/v1/auth.akacast.akamaistream.net/fnradio-shoutcast-32',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-91.png'},
+      {name: 'NPR News',url: 'http://nprdmp-live01-mp3.akacast.akamaistream.net/7/998/364916/v1/npr.akacast.akamaistream.net/nprdmp_live01_mp3.mp3',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-50.png'},
+      {name: 'Bloomberg Radio',url: 'http://15123.live.streamtheworld.com/WBBRAMAAC.aac',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-155.png'},
+      {name: 'CBS News',url: 'http://crystalout.surfernetwork.com:8001/WJJF-FM_MP3',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-421.png'},
+      {name: 'Magic Radio Music',url: 'https://stream-mz.planetradio.co.uk/magicnational.aac',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-5.png'},
+      {name: 'Heart Radio Music',url: 'http://ice-sov.musicradio.com/HeartLondon',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-52.png'},
+      {name: 'Virgin Radio Music',url: 'http://radio.virginradio.co.uk/stream',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-197.png'},
+      {name: 'Absolute Radio Music',url: 'https://ais.absoluteradio.co.uk/absoluteradiomed.aac',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-169.png'},
+      {name: 'Radio City Music',url: 'http://icy-e-bl-09-boh.sharp-stream.com/city.mp3',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-610.png'},
+      {name: 'Smooth Radio Music',url: 'http://media-ice.musicradio.com/SmoothLondonMP3',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-237.png'},
+      {name: 'Hits Radio Music',url: 'http://19353.live.streamtheworld.com/977_HITS.mp3',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-1.png'},
+      {name: 'Country Hits Music',url: 'http://19353.live.streamtheworld.com/977_COUNTRY.mp3',cover: 'https://www.fifm.net/wp-content/uploads/fifm/2018/12/c300-29.png'},
+    ]
+  });
+  ap.init();// <div class="aplayer" data-id="75017206" data-server=”netease" data-type="album" data-autoplay=”true” data-mode=”circulation”></div>
+</script>
+</html>
